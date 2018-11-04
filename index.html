@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+  <style>
+  body {
+      text-align: center;
+      font-family: 'Quicksand'
+  }
+  button {
+      background-color: #1DC85A;
+      border: none;
+      color: white;
+      font-family: 'Quicksand';
+      font-size: 28px;
+  }
+
+
+  </style>
+    <title>Song Selector</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="main.js"></script>
+</head>
+<body>
+  <h1><strong>SONG SELECTOR</strong></h1>
+ <p><bold>Select either low, medium, or high tempo to find songs based on their beats per minute.</bold></p>
+
+<small>Listen to Low BPM music to lower your blood pressure.</small><br>
+<small>Listen to High BPM music to keep you energized while exercising.</small>
+<br>
+<br>
+
+<button onclick="loadsongs(80, 0)">Low BPM</button>
+<button onclick="loadsongs(120, 80)">Medium BPM</button>
+<button onclick="loadsongs(200, 120)">High BPM</button>
+<br>
+<div id="hi"> </div>
+<br>
+
+</body>
+</html>
